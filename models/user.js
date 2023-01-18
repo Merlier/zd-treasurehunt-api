@@ -15,6 +15,9 @@ const User = new Schema(
       type: String,
       trim: true,
     },
+    permissions: [{
+        type: String
+    }]
   },
   {
     timestamps: true, // ajoute 2 champs au document createdAt et updatedAt
